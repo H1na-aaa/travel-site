@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="レスポンシブ対応のサンプルサイトです。シンプルなレイアウトで、モバイルフレンドリーなデザインを実現しています。">
+<meta name="keywords" content="レスポンシブ, モバイルフレンドリー, HTML, CSS, Webデザイン, サンプルサイト">
+
+  <title>ひなとらべる</title>
+  <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="image/aikon.png">
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src=image/aikon.png>
+      </a>
+
+      <!-- ハンバーガーボタン -->
+      <button class="hamburger" aria-label="メニューを開閉">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- ナビ -->
+      <nav class="nav">
+        <ul>
+        <li><a href="tokyo/tokyo.html">東京</a></li>
+        <li><a href="kyoto/kyoto.html">京都</a></li>
+        <li><a href="osaka/osaka.html">大阪</a></li>
+        <li><a href="hyogo/hyogo.html">兵庫</a></li> 
+        <li><a href="hirosima/hirosima.html">広島</a></li>
+       </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+<!-- メイン -->
+  <main class="site-main">
+    <div class="content">
+      <h2>旅行記録</h2>
+      <p>自由気ままに旅行してます♪</p>
+
+	<a href="tokyo/tokyo.html" class="ikisaki">
+	<div class="tokyo">
+	<h3>東京編</h3>
+	<p>ゲームのイベント＆聖地巡礼</p>
+	</div>
+	</a>
+	
+	<a href="kyoto/kyoto.html" class="ikisaki">
+	<div class="kyoto">
+	<h3>京都編</h3>
+	<p>有名どころの観光地巡り</p>
+	</div>
+	</a>
+	
+	
+	<a href="osaka/osaka.html" class="ikisaki">
+	<div class="osaka">
+	<h3>大阪編</h3>
+	<p>美味しい食べ物＆お買い物</p>
+	</div>
+	</a>
+
+	
+	<a href="hyogo/hyogo.html" class="ikisaki">
+	<div class="hyogo">
+	<h3>兵庫編</h3>
+	<p>景色＆海巡り</p>
+	</div>
+	</a>
+
+
+	<a href="hirosima/hirosima.html" class="ikisaki">
+	<div class="hirosima">
+	<h3>広島編</h3>
+	<p>宮島観光</p>
+	</div>
+	</a>
+    </div>
+
+
+<div class="sidebar-container">
+  <aside class="sidebar1">
+    <h2>自己紹介</h2>
+  <div class="profile">
+ <img src="image/hina_result.jpg" >
+  <p>2年生の岡田 陽向子です♪<br>webゼミのゼミ長です！<br>自由気ままに旅行しています<br>
+今はまだ電車とバスでしか<br>移動できないので<br>早く免許が欲しいです<br>
+景色がいいところって<br>大体アクセス悪いんですよね<br>
+追記　免許取りました</p>
+  </div>
+  </aside>
+
+  <aside class="sidebar2">
+    <h2>このサイトについて</h2>
+  <p>このサイトは私の旅行の記録を書いたものなので<br>
+  趣味全開となっております<br>
+参考になるかもしれないしならないかもしれません<br>
+こんなところもあるんだなーくらいにお楽しみください</p>
+  </aside>
+</div>
+  </main>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="tokyo/tokyo.html">東京</a></li>
+        <li><a href="kyoto/kyoto.html">京都</a></li>
+        <li><a href="osaka/osaka.html">大阪</a></li>
+        <li><a href="hyogo/hyogo.html">兵庫</a></li> 
+        <li><a href="hirosima/hirosima.html">広島</a></li>
+      </ul>
+    </nav>
+    <p class="copy">&copy; hina travel 2025.</p>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const nav = document.querySelector(".nav");
+
+    hamburger.addEventListener("click", () => {
+      nav.classList.toggle("active");
+      hamburger.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
