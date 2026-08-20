@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="レスポンシブ対応のサンプルサイトです。シンプルなレイアウトで、モバイルフレンドリーなデザインを実現しています。">
+<meta name="keywords" content="レスポンシブ, モバイルフレンドリー, HTML, CSS, Webデザイン, サンプルサイト">
+
+  <title>ひなとらべる</title>
+  <link rel="stylesheet" href="../style1.css">
+	<link rel="icon" href="../image/aikon.png">
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <img src=../image/aikon.png>
+      </a>
+
+      <!-- ハンバーガーボタン -->
+      <button class="hamburger" aria-label="メニューを開閉">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- ナビ -->
+      <nav class="nav">
+        <ul>
+        <li><a href="../index.html">トップページ</a></li>
+        <li><a href="../kyoto/kyoto.html">京都</a></li>
+        <li><a href="../osaka/osaka.html">大阪</a></li>
+        <li><a href="../hyogo/hyogo.html">兵庫</a></li>
+        <li><a href="../hirosima/hirosima.html">広島</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <button id="backToTop">▲</button>  
+<!-- メイン -->
+<div id="top"></div>
+  <main class="site-maintokyo">
+    <div class="content">
+      <h2 class="titletokyo">渋谷</h2>
+      <h3 class="minititletokyo">忠犬ハチ公</h3>
+	<div class="box1">
+      <img src="../image/tokyo/image2_result.jpg" class="imagetate" >
+	<p>思ったより普通の犬だった<br>
+待ち合わせ場所兼観光地って感じになってて<br>
+人が多かった…
+</p>
+	</div>
+      <h3 class="minititletokyo">SHIBUYA109 渋谷店</h3>
+      <div class="box1">
+      <img src="../image/tokyo/IMG_7732_result.jpg" class="imagetate" >
+      <div class="boxinfo">
+      <p>open 10:00～21:00</p>
+      <br>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7075179212484!2d139.698728!3d35.6595771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca9cd6c1c87%3A0x55a2a75ba417e072!2sSHIBUYA109!5e0!3m2!1sja!2sjp!4v1775907328982!5m2!1sja!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <p>流行りの服が大体なんでもある<br>
+ここだけで生きていける気がする<br>
+割とここに住みたい
+</p> 
+      </div>
+
+      <h2 class="titletokyo">イベント</h2>
+      <div class="box1">
+	<p>オタクによるオタクのための記録<br>
+ペルソナはいいぞ…原神はいいぞ…</p>
+      </div>
+	<a href="perusona.html" class="ikisaki">
+	<div class="nakami1">
+    <div class="bg-box bg7"></div>
+    <div class="bg-box bg8"></div>
+    <div class="bg-box bg9"></div>
+    <div class="text">
+	<h3>ペルソナ5</h3>
+	<p>ペルソナ5の聖地巡礼とコラボカフェ<br>2025年8月</p>
+	</div>
+	</div>
+	</a>
+	<a href="gensin.html" class="ikisaki">
+	<div class="nakami1">
+    <div class="bg-box bg10"></div>
+    <div class="bg-box bg11"></div>
+    <div class="bg-box bg12"></div>
+    <div class="text">
+	<h3>原神</h3>
+	<p>スカイツリーとスシローのコラボイベント<br>2024年2月</p>
+	</div>
+	</div>
+	</a>
+
+    </div>
+  </main>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="../index.html">トップページ</a></li>
+        <li><a href="../kyoto/kyoto.html">京都</a></li>
+        <li><a href="../osaka/osaka.html">大阪</a></li>
+        <li><a href="../hyogo/hyogo.html">兵庫</a></li>
+        <li><a href="../hirosima/hirosima.html">広島</a></li>
+      </ul>
+    </nav>
+    <p class="copy">&copy; hina travel 2025.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="../kairyou.js"></script>
+</body>
+</html>
